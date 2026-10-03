@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==================== 淡蓝色主题色 ==================== -->
+    <color name="primary">#87CEEB</color>  <!-- 天蓝色 - 主色 -->
+    <color name="primary_light">#B3E5FC</color>  <!-- 浅天蓝色 -->
+    <color name="primary_dark">#4FC3F7</color>  <!-- 深天蓝色 -->
+    <color name="primary_variant">#03A9F4</color>
+    <color name="secondary">#4CAF50</color>  <!-- 绿色 - 代表安全通过 -->
+    <color name="secondary_variant">#2E7D32</color>
+
+    <!-- ==================== 功能色 ==================== -->
+    <color name="warning">#FFB74D</color>  <!-- 浅橙色 - 警告 -->
+    <color name="danger">#EF5350</color>  <!-- 浅红色 - 危险 -->
+    <color name="safe">#81C784</color>  <!-- 浅绿色 - 安全 -->
+
+    <!-- ==================== 背景色 ==================== -->
+    <color name="background_light">#F0F8FF</color>  <!-- 淡蓝色背景 - AliceBlue -->
+    <color name="background_dark">#1A237E</color>  <!-- 深蓝色背景 -->
+
+    <!-- ==================== 表面色 ==================== -->
+    <color name="surface_light">#FFFFFF</color>  <!-- 白色 -->
+    <color name="surface_dark">#1E2A3A</color>  <!-- 深蓝灰色 -->
+
+    <!-- ==================== 文字色 ==================== -->
+    <color name="text_primary">#1A237E</color>  <!-- 深蓝色文字 -->
+    <color name="text_secondary">#5C6BC0</color>  <!-- 蓝灰色文字 -->
+    <color name="text_hint">#9FA8DA</color>  <!-- 浅蓝灰色 -->
+    <color name="text_on_primary">#FFFFFF</color>  <!-- 白色 -->
+
+    <!-- ==================== 适老化大字体颜色 ==================== -->
+    <color name="elder_text_primary">#1A237E</color>  <!-- 深蓝色 -->
+    <color name="elder_text_secondary">#3F51B5</color>  <!-- 靛蓝色 -->
+
+    <!-- ==================== 风险等级色 ==================== -->
+    <color name="risk_low">#81C784</color>  <!-- 浅绿色 -->
+    <color name="risk_medium">#FFB74D</color>  <!-- 浅橙色 -->
+    <color name="risk_high">#EF5350</color>  <!-- 浅红色 -->
+    <color name="risk_critical">#D32F2F</color>  <!-- 深红色 -->
+
+    <!-- ==================== 扩展淡蓝色系 ==================== -->
+    <color name="light_blue_50">#E3F2FD</color>  <!-- 最浅蓝 -->
+    <color name="light_blue_100">#BBDEFB</color>
+    <color name="light_blue_200">#90CAF9</color>
+    <color name="light_blue_300">#64B5F6</color>
+    <color name="light_blue_400">#42A5F5</color>
+    <color name="light_blue_500">#2196F3</color>  <!-- 标准蓝 -->
+    <color name="light_blue_600">#1E88E5</color>
+    <color name="light_blue_700">#1976D2</color>
+    <color name="light_blue_800">#1565C0</color>
+    <color name="light_blue_900">#0D47A1</color>  <!-- 最深蓝 -->
+
+    <!-- ==================== 特殊功能色 ==================== -->
+    <color name="points_gold">#FFD54F</color>  <!-- 浅金色 -->
+    <color name="call_incoming">#4FC3F7</color>  <!-- 浅蓝色 - 来电 -->
+    <color name="call_blocked">#EF5350</color>  <!-- 浅红色 - 拦截 -->
+    <color name="report_submitted">#7E57C2</color>  <!-- 浅紫色 - 提交 -->
+</resources>

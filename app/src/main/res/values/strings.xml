@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">银盾守护</string>
+
+    <!-- 通用 -->
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="back">返回</string>
+    <string name="loading">加载中...</string>
+
+    <!-- 底部导航 -->
+    <string name="nav_financial">财务监控</string>
+    <string name="nav_training">防骗训练</string>
+    <string name="nav_call">来电防护</string>
+    <string name="nav_report">举报中心</string>
+    <string name="nav_settings">设置</string>
+
+    <!-- 财务监控 -->
+    <string name="financial_title">财务安全监控</string>
+    <string name="financial_bind_account">绑定账户</string>
+    <string name="financial_bind_bank">绑定银行卡</string>
+    <string name="financial_bind_wechat">绑定微信钱包</string>
+    <string name="financial_recent_transactions">近期交易</string>
+    <string name="financial_risk_alert">风险提醒</string>
+
+    <!-- 防骗训练 -->
+    <string name="training_title">AI防骗训练</string>
+    <string name="training_start">开始训练</string>
+    <string name="training_history">训练记录</string>
+    <string name="training_points">安全积分</string>
+    <string name="training_reward">防骗红包</string>
+
+    <!-- 来电防护 -->
+    <string name="call_title">来电防护</string>
+    <string name="call_whitelist">白名单设置</string>
+    <string name="call_risk_level">风险等级</string>
+    <string name="call_low_risk">低风险 - 疑似推销</string>
+    <string name="call_high_risk">高风险 - 疑似诈骗</string>
+
+    <!-- 举报中心 -->
+    <string name="report_title">举报中心</string>
+    <string name="report_submit">我要报案</string>
+    <string name="report_family_submit">为家属报案</string>
+    <string name="report_progress">案件进度</string>
+    <string name="report_emergency">一键拨打96110</string>
+
+    <!-- 设置 -->
+    <string name="settings_title">设置</string>
+    <string name="settings_account">账户管理</string>
+    <string name="settings_privacy">隐私设置</string>
+    <string name="settings_font_size">字体大小</string>
+    <string name="settings_dialect">方言设置</string>
+
+    <!-- 权限说明 -->
+    <string name="permission_phone_title">电话权限说明</string>
+    <string name="permission_phone_desc">用于监听陌生来电，识别诈骗电话并提供风险提醒</string>
+    <string name="permission_audio_title">麦克风权限说明</string>
+    <string name="permission_audio_desc">用于语音交互式防骗训练</string>
+
+    <!-- 无障碍服务 -->
+    <string name="call_monitoring_service_desc">银盾守护来电防护服务，用于监听陌生来电并提供风险提醒</string>
+</resources>
