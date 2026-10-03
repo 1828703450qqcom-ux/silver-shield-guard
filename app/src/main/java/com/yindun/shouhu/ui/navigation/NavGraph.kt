@@ -81,9 +81,6 @@ fun NavGraph(
             val accountType = backStackEntry.arguments?.getString("accountType") ?: "bank"
             BindAccountScreen(
                 accountType = accountType,
-                onBindSuccess = { accountId ->
-                    navController.popBackStack()
-                },
                 onBack = { navController.popBackStack() }
             )
         }

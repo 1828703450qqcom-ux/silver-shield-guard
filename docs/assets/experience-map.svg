@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">银盾守护体验路径</title>
+  <desc id="desc">从反诈训练、来电提醒、财务风险演示到材料整理的四步本地原型体验。</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#091a35"/><stop offset="1" stop-color="#0b3150"/></linearGradient>
+    <linearGradient id="card" x2="1" y2="1"><stop stop-color="#123653"/><stop offset="1" stop-color="#0c253e"/></linearGradient>
+    <linearGradient id="accent" x2="1"><stop stop-color="#49d9e8"/><stop offset="1" stop-color="#79a9ff"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#03101f" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
+  <path d="M0 265 Q250 180 490 260 T980 255 T1200 245" fill="none" stroke="#2e85bd" stroke-opacity=".22" stroke-width="2"/>
+  <g fill="#59b8ee" opacity=".38"><circle cx="80" cy="50" r="2"/><circle cx="1110" cy="80" r="2"/><circle cx="625" cy="55" r="1.6"/><circle cx="990" cy="300" r="1.5"/></g>
+  <text x="52" y="65" fill="#e7f8ff" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="26" font-weight="700">从认识风险到整理线索</text>
+  <text x="52" y="97" fill="#8fb5cc" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="15">本地演示路径 · 清晰提示 · 不接入真实金融账户</text>
+  <g font-family="Arial,'Microsoft YaHei',sans-serif" filter="url(#shadow)">
+    <g transform="translate(52 130)"><rect width="256" height="170" rx="20" fill="url(#card)" stroke="#367c9d"/><circle cx="48" cy="49" r="27" fill="#144e69"/><path d="M38 48l8 8 16-19" fill="none" stroke="url(#accent)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><text x="28" y="118" fill="#f1fbff" font-size="22" font-weight="700">情景训练</text><text x="28" y="146" fill="#9cc4d7" font-size="14">识别常见诈骗话术</text></g>
+    <g transform="translate(332 130)"><rect width="256" height="170" rx="20" fill="url(#card)" stroke="#367c9d"/><circle cx="48" cy="49" r="27" fill="#144e69"/><path d="M40 37h17v24H40z M36 57h25" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linejoin="round"/><text x="28" y="118" fill="#f1fbff" font-size="22" font-weight="700">来电提示</text><text x="28" y="146" fill="#9cc4d7" font-size="14">查看风险与白名单</text></g>
+    <g transform="translate(612 130)"><rect width="256" height="170" rx="20" fill="url(#card)" stroke="#367c9d"/><circle cx="48" cy="49" r="27" fill="#144e69"/><path d="M34 57l10-11 8 6 11-17" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><text x="28" y="118" fill="#f1fbff" font-size="22" font-weight="700">风险演示</text><text x="28" y="146" fill="#9cc4d7" font-size="14">理解本地规则提醒</text></g>
+    <g transform="translate(892 130)"><rect width="256" height="170" rx="20" fill="url(#card)" stroke="#367c9d"/><circle cx="48" cy="49" r="27" fill="#144e69"/><path d="M38 35h17l8 9v20H38z M43 50h15 M43 57h12" fill="none" stroke="url(#accent)" stroke-width="3" stroke-linejoin="round"/><text x="28" y="118" fill="#f1fbff" font-size="22" font-weight="700">材料整理</text><text x="28" y="146" fill="#9cc4d7" font-size="14">留存线索并核实渠道</text></g>
+  </g>
+</svg>

@@ -47,20 +47,23 @@ fun FinancialScreen(
         ) {
             // 绑定账户卡片
             item {
-                BindAccountCard()
+                BindAccountCard(
+                    onBankClick = { navController.navigate("financial/bind/bank") },
+                    onWalletClick = { navController.navigate("financial/bind/wechat") }
+                )
             }
 
             // 账户列表
             item {
                 Text(
-                    text = "我的账户",
+                    text = "演示账户",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold
                 )
             }
 
             // 示例账户卡片
-            items(1) { index ->
+            items(1) {
                 AccountCard(
                     bankName = "示例银行",
                     accountNumber = "**** **** **** 1234",
@@ -73,7 +76,7 @@ fun FinancialScreen(
             item {
                 Spacer(modifier = Modifier.height(8.dp))
                 Text(
-                    text = "风险提醒",
+                    text = "演示风险提醒",
                     style = MaterialTheme.typography.headlineSmall,
                     fontWeight = FontWeight.Bold
                 )
@@ -103,7 +106,7 @@ enum class RiskLevel {
 }
 
 @Composable
-fun BindAccountCard() {
+fun BindAccountCard(onBankClick: () -> Unit, onWalletClick: () -> Unit) {
     Card(
         modifier = Modifier.fillMaxWidth(),
         colors = CardDefaults.cardColors(
@@ -114,7 +117,7 @@ fun BindAccountCard() {
             modifier = Modifier.padding(16.dp)
         ) {
             Text(
-                text = "绑定账户",
+                text = "账户接入演示",
                 style = MaterialTheme.typography.titleLarge,
                 fontWeight = FontWeight.Bold,
                 color = Primary
@@ -123,7 +126,7 @@ fun BindAccountCard() {
             Spacer(modifier = Modifier.height(8.dp))
 
             Text(
-                text = "绑定银行卡或微信钱包，实时监控交易安全",
+                text = "查看接入方案；当前不连接银行或支付平台，也不读取真实交易。",
                 style = MaterialTheme.typography.bodyMedium,
                 color = TextSecondary
             )
@@ -135,15 +138,15 @@ fun BindAccountCard() {
                 horizontalArrangement = Arrangement.spacedBy(12.dp)
             ) {
                 ActionButton(
-                    text = "绑定银行卡",
+                    text = "银行卡说明",
                     icon = Icons.Default.CreditCard,
-                    onClick = { /* TODO */ }
+                    onClick = onBankClick
                 )
 
                 ActionButton(
-                    text = "绑定微信",
+                    text = "钱包说明",
                     icon = Icons.Default.AccountBalanceWallet,
-                    onClick = { /* TODO */ }
+                    onClick = onWalletClick
                 )
             }
         }

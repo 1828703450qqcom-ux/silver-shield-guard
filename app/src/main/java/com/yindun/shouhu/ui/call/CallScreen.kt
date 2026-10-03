@@ -63,7 +63,7 @@ fun CallScreen(
             // 白名单管理
             item {
                 WhitelistCard(
-                    onManageClick = { /* TODO */ }
+                    onManageClick = { navController.navigate("call/whitelist") }
                 )
             }
 

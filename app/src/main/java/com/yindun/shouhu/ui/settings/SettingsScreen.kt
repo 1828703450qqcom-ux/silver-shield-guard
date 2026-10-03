@@ -50,19 +50,19 @@ fun SettingsScreen(
                         icon = Icons.Default.Person,
                         title = "个人信息",
                         subtitle = "管理您的账户信息",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/account") }
                     )
                     SettingsItem(
                         icon = Icons.Default.Lock,
                         title = "修改密码",
                         subtitle = "修改登录密码",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/account") }
                     )
                     SettingsItem(
                         icon = Icons.Default.FamilyRestroom,
                         title = "家庭守护",
                         subtitle = "管理绑定的家庭成员",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("family/guard") }
                     )
                 }
             }
@@ -74,13 +74,13 @@ fun SettingsScreen(
                         icon = Icons.Default.Security,
                         title = "数据加密",
                         subtitle = "管理数据加密设置",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/privacy") }
                     )
                     SettingsItem(
                         icon = Icons.Default.DeleteForever,
                         title = "删除数据",
                         subtitle = "删除所有本地存储的数据",
-                        onClick = { /* TODO */ },
+                        onClick = { navController.navigate("settings/privacy") },
                         titleColor = Danger
                     )
                 }
@@ -93,14 +93,13 @@ fun SettingsScreen(
                         icon = Icons.Default.TextIncrease,
                         title = "字体大小",
                         subtitle = "调整界面字体大小",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/display") }
                     )
                     SettingsItem(
                         icon = Icons.Default.Brightness6,
-                        title = "深色模式",
-                        subtitle = "切换深色/浅色主题",
-                        onClick = { /* TODO */ },
-                        trailing = { DarkModeSwitch() }
+                        title = "显示与主题",
+                        subtitle = "查看显示选项",
+                        onClick = { navController.navigate("settings/display") }
                     )
                 }
             }
@@ -112,13 +111,13 @@ fun SettingsScreen(
                         icon = Icons.Default.RecordVoiceOver,
                         title = "方言设置",
                         subtitle = "选择语音交互的方言",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/dialect") }
                     )
                     SettingsItem(
                         icon = Icons.Default.Speed,
                         title = "语速调整",
                         subtitle = "调整语音播放速度",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/dialect") }
                     )
                 }
             }
@@ -130,13 +129,13 @@ fun SettingsScreen(
                         icon = Icons.Default.Notifications,
                         title = "通知管理",
                         subtitle = "管理各类通知的开关",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/notification") }
                     )
                     SettingsItem(
                         icon = Icons.Default.VolumeUp,
                         title = "语音提醒",
                         subtitle = "开启或关闭语音提醒",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/notification") }
                     )
                 }
             }
@@ -148,39 +147,21 @@ fun SettingsScreen(
                         icon = Icons.Default.Info,
                         title = "关于银盾守护",
                         subtitle = "版本 1.0.0",
-                        onClick = { /* TODO */ }
+                        onClick = { navController.navigate("settings/about") }
                     )
                     SettingsItem(
                         icon = Icons.Default.Description,
-                        title = "用户协议",
-                        onClick = { /* TODO */ }
+                        title = "使用说明",
+                        onClick = { navController.navigate("settings/about") }
                     )
                     SettingsItem(
                         icon = Icons.Default.PrivacyTip,
-                        title = "隐私政策",
-                        onClick = { /* TODO */ }
+                        title = "隐私设置",
+                        onClick = { navController.navigate("settings/privacy") }
                     )
                 }
             }
 
-            // 退出登录
-            item {
-                Spacer(modifier = Modifier.height(8.dp))
-                Button(
-                    onClick = { /* TODO: 退出登录 */ },
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Danger
-                    ),
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    Icon(
-                        imageVector = Icons.Default.Logout,
-                        contentDescription = null
-                    )
-                    Spacer(modifier = Modifier.width(8.dp))
-                    Text("退出登录")
-                }
-            }
         }
     }
 }
@@ -264,14 +245,4 @@ fun SettingsItem(
             }
         }
     }
-}
-
-@Composable
-fun DarkModeSwitch() {
-    var isDarkMode by remember { mutableStateOf(false) }
-
-    Switch(
-        checked = isDarkMode,
-        onCheckedChange = { isDarkMode = it }
-    )
 }
